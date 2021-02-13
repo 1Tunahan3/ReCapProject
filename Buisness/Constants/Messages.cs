@@ -11,5 +11,6 @@ namespace Buisness.Constants
       public static string CarePriceInvalid = "Araç Fiyatı Geçersiz";
       internal static string MaintenanceTime = "Sistem Bakımda";
       internal static string ProductsListed = "Ürünler Listelendi";
-  }
+        internal static string UserAdded;
+    }
 }

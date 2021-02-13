@@ -10,36 +10,57 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-           //CarManager carManager=new CarManager(new EfCarDal());
-           //Car car = new Car
-           //{
-           //    BrandId = 2,ColorId = 2,ModelYear = "2019",DailyPrice = 56000,Description = "SUV57"
-           //};
-           //carManager.Add(car);
-           //foreach (var item in carManager.GetAll())
-           //{
-           //    Console.WriteLine(item.Description);
-           //}
-           
-           //ColorManager colorManager=new ColorManager(new EfColorDal());
-           //Color color1 = new Color { Name = "Gri",id = 25};
-           // colorManager.Delete(color1);
-           // foreach (var item in colorManager.GetAll())
-           //{
-           //    Console.WriteLine(item.Name);
-           //}
+            //CarManager carManager=new CarManager(new EfCarDal());
+            //Car car = new Car
+            //{
+            //    BrandId = 2,ColorId = 2,ModelYear = "2019",DailyPrice = 56000,Description = "SUV57"
+            //};
+            //carManager.Add(car);
+            //foreach (var item in carManager.GetAll())
+            //{
+            //    Console.WriteLine(item.Description);
+            //}
 
-           CarManager carManager=new CarManager(new EfCarDal());
-           int num = 1;
-           foreach (var item in carManager.GetCarDetail().Data)
-           {
-               Console.WriteLine(item.BrandName + " "+item.ColorName +" "+ item.DailyPrice+ " "+ item.ModelYear+ " "+ item.Description);
-           }
+            //ColorManager colorManager=new ColorManager(new EfColorDal());
+            //Color color1 = new Color { Name = "Gri",id = 25};
+            // colorManager.Delete(color1);
+            // foreach (var item in colorManager.GetAll())
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
 
-           var deger = carManager.GetById(num).Data;
-            Console.WriteLine(deger.Description);
-            Console.WriteLine(deger.DailyPrice);
-            Console.WriteLine(deger.ModelYear);
+            //CarManager carManager=new CarManager(new EfCarDal());
+            //int num = 1;
+            //foreach (var item in carManager.GetCarDetail().Data)
+            //{
+            //    Console.WriteLine(item.BrandName + " "+item.ColorName +" "+ item.DailyPrice+ " "+ item.ModelYear+ " "+ item.Description);
+            //}
+
+            //var deger = carManager.GetById(num).Data;
+            // Console.WriteLine(deger.Description);
+            // Console.WriteLine(deger.DailyPrice);
+            //Console.WriteLine(deger.ModelYear);
+
+
+          UserManager userManager=new UserManager(new EfUserDal());
+          User user=new User();
+          foreach (var item in userManager.GetAll().Data)
+          {
+              if (item.FirstName=="Tunahan")
+              {
+                  user = item;
+              }
+          }
+
+          userManager.Delete(user);
+          foreach (var item in userManager.GetAll().Data)
+          {
+              Console.WriteLine(item.FirstName);
+          }
+
+
+
+
         }
     }
 }
