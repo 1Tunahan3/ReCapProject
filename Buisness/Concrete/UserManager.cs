@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Buisness.Abstract;
-using Buisness.Constants;
+using Business.Constants;
+using Business.Abstract;
 using Core.Utilitize.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
-namespace Buisness.Concrete
+namespace Business.Concrete
 {
    public class UserManager:IUserService
    {

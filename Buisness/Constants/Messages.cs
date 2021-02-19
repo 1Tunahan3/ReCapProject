@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Buisness.Constants
+namespace Business.Constants
 {
   public static class Messages
   {

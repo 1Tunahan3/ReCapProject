@@ -4,7 +4,7 @@ using System.Text;
 using Core.Utilitize.Results;
 using Entities.Concrete;
 
-namespace Buisness.Abstract
+namespace Business.Abstract
 {
    public interface IUserService
     {

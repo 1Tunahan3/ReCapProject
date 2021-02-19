@@ -5,7 +5,7 @@ using Core.Utilitize.Results;
 using Entities.Concrete;
 using Entities.DTOs;
 
-namespace Buisness.Abstract
+namespace Business.Abstract
 {
    public interface ICarService
     {

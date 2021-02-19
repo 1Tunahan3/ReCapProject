@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{4B9DC512-01B1-4A22-8947-2A26E826AF3E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Buisness", "Buisness\Buisness.csproj", "{156CC599-3815-4CF3-8A30-51A639B92B9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Buisness\Business.csproj", "{156CC599-3815-4CF3-8A30-51A639B92B9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{02A6022A-1CA2-4283-942D-0E600361543A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{A6E42FD3-59F0-438D-BB46-4838076BD21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{C6732059-95B6-4532-B952-9FCED51883B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{C6732059-95B6-4532-B952-9FCED51883B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{61C27948-E310-42C4-93A5-379DB6FEFA5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C6732059-95B6-4532-B952-9FCED51883B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6732059-95B6-4532-B952-9FCED51883B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6732059-95B6-4532-B952-9FCED51883B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C27948-E310-42C4-93A5-379DB6FEFA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C27948-E310-42C4-93A5-379DB6FEFA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C27948-E310-42C4-93A5-379DB6FEFA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C27948-E310-42C4-93A5-379DB6FEFA5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
