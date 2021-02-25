@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Business.Abstract;
+using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Validation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilitize.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -27,13 +30,10 @@ namespace Buisness.Concrete
           return new SuccessDataResult<Rental>(_rentalDal.Get(p=>p.Id==id));
       }
 
-      public IResult Add(Rental rental)
+      [ValidationAspect(typeof(RentalValidator))]
+        public IResult Add(Rental rental)
       {
-          if (rental.ReturnDate==null)
-          {
-              return new ErrorResult();
-          }
-
+          
           _rentalDal.Add(rental);
           return new SuccesResult();
       }
