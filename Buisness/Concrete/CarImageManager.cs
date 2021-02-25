@@ -32,7 +32,7 @@ namespace Business.Concrete
 
         public IResult Add(CarImage carImage)
         {
-            if (ChechIImageLimitExceded(carImage).Succes)
+            if (CheckIfImageLimitExceded(carImage).Succes)
             {
                 _carImageDal.Add(carImage);
                 return new SuccesResult();
@@ -70,7 +70,7 @@ namespace Business.Concrete
         }
 
 
-        private IResult ChechIImageLimitExceded(CarImage carImage)
+        private IResult CheckIfImageLimitExceded(CarImage carImage)
         {
             var result = _carImageDal.GetAll(p => p.CarId == carImage.CarId).Count();
             if (result >= 5)
