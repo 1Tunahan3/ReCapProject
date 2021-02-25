@@ -12,5 +12,6 @@ namespace Business.Constants
       internal static string MaintenanceTime = "Sistem Bakımda";
       internal static string ProductsListed = "Ürünler Listelendi";
         internal static string UserAdded;
+        internal static string ImageLimitExceeded;
     }
 }
