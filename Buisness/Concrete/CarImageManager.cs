@@ -63,7 +63,8 @@ namespace Business.Concrete
             }
             else
             {
-                return new SuccessDataResult<List<CarImage>>();
+                //Buraya resim olmaması durumunda null resim eklencek
+                return new ErrorDataResult<List<CarImage>>();
             }
 
           
